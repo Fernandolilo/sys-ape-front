@@ -26,3 +26,41 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 "# sys-ape-front" 
+Angular 16
+ng new nome do app
+
+import do styles bootstrap
+
+Atualizar o angular.json:
+
+npm install bootstrap
+
+"styles": [
+  "src/styles.scss",
+  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+
+
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+Limpar o cache do Angular CLI:
+Como mencionado antes, limpar o cache do Angular CLI pode ajudar a resolver problemas de compilação:
+
+bash
+Copiar código
+npm cache clean --force
+
+Reinstalar as dependências do projeto:
+Após limpar o cache, reinstale todas as dependências do projeto novamente:
+
+bash
+Copiar código
+npm install 
+
+reiniciar o App
+ng serve 
+
+caso não tenha o AppRoutingModule 
+ng generate module app-routing --flat --module=app
