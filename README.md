@@ -42,21 +42,20 @@ npm install bootstrap
 
 
 
-
+scss principal add
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 Limpar o cache do Angular CLI:
-Como mencionado antes, limpar o cache do Angular CLI pode ajudar a resolver problemas de compilação:
+limpar o cache do Angular CLI pode ajudar a resolver problemas de compilação:
 
 bash
-Copiar código
+no bash ou shell de o comando => 
 npm cache clean --force
 
 Reinstalar as dependências do projeto:
 Após limpar o cache, reinstale todas as dependências do projeto novamente:
 
-bash
-Copiar código
+bash ou shell de o seguinte comando =>
 npm install 
 
 reiniciar o App
