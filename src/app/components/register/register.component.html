@@ -1,6 +1,6 @@
 <div class="container">
     <h2>Register</h2>
-    <form>
+    <form [formGroup]="registerForm" (ngSubmit)=submitForm()>
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" formControlName="name" />
@@ -20,7 +20,10 @@
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword" />
         </div>
-
-        <button type="submit" class="btn btn-primary">Register</button>
+ <!--caso não seja digitado todos os valores, e password for diferente de confir deixa o botão desabilitado
+ 
+ [disabled]="registerForm.invalid"
+ -->
+        <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Register</button>
     </form>
 </div>
