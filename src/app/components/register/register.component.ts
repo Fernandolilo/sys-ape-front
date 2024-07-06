@@ -42,5 +42,11 @@ export class RegisterComponent implements OnInit {
 
   submitForm(){
     console.log(this.registerForm?.value);
+
+    this.service.register(this.registerForm.value).subscribe(
+      (response) =>{
+        console.log(response);
+      }
+    )
   }
 }
