@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     background: linear-gradient(to right, rgba(255, 165, 0, 1) 0.9px, rgb(0,0,0));
     margin-top: 20px;
 }
@@ -51,13 +51,18 @@ button {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    //background-color: #007bff;
+    //border-color: #007bff;
+    background-color:  rgba(255, 165, 0, 1);
+    border-color: rgba(255, 165, 0, 1);
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    //background-color: #0056b3;
+    //border-color: #0056b3;
+
+    background-color:  rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
 }
 
 .btn-primary:disabled,
