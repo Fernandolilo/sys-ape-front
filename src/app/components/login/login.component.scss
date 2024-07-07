@@ -1,25 +1,28 @@
-/* register.component.scss */
+/* login.component.scss */
 
 .container {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 450px;
+    margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
+    //background-color: #f8f9fa;
     background: linear-gradient(to right, rgba(255, 165, 0, 1) 0.9px, rgb(0,0,0));
-    margin-top: 20px;
+    margin-top: 100px;
 }
-
 
 h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     label {
+        display: block;
         font-weight: bold;
+        margin-bottom: 5px;
     }
 
     input {
@@ -51,17 +54,17 @@ button {
 }
 
 .btn-primary {
-    //background-color: #007bff;
+   // background-color: #007bff;
     //border-color: #007bff;
     background-color:  rgba(255, 165, 0, 1);
     border-color: rgba(255, 165, 0, 1);
 }
 
 .btn-primary:hover {
-    //background-color: #0056b3;
-    //border-color: #0056b3;
-    background-color:  rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
+   // background-color: #0056b3;
+   // border-color: #0056b3;
+   background-color:  rgba(0,0,0,0);
+   border-color: rgba(0,0,0,0);
 }
 
 .btn-primary:disabled,

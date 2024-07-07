@@ -13,4 +13,8 @@ export class JwtService {
   register(singRequest: any): Observable<any> {
     return this.http.post(BASE_URL + '/signup', singRequest)
   }
+
+  login(loginRequest: any): Observable<any> {
+    return this.http.post(BASE_URL + '/login',  loginRequest)
+  }
 }
