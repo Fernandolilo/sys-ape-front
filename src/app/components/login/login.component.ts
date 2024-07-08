@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Route, Router } from '@angular/router';
 import { JwtService } from 'src/app/service/jwt.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private service: JwtService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ) { }
 
 
@@ -25,15 +27,16 @@ export class LoginComponent implements OnInit {
     })
   }
 
-
   submitForm() {
     this.service.login(this.loginForm.value).subscribe(
       (response) => {
         console.log(response);
-        if(response != null){
-          alert("Logado com sucesso!" + response.jwt);
+        if (response.jwt != null) {
+          alert("Hello, Your token is " + response.jwt);
+          const jwtToken = response.jwt;
+          localStorage.setItem('jwt', jwtToken);
+          this.router.navigateByUrl("/dashboard");
         }
-
       }
     )
   }
